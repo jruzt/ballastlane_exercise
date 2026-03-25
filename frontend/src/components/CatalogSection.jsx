@@ -19,7 +19,7 @@ function CatalogSection({
       </div>
 
       <div className="book-list">
-        {books.map((book) => (
+        {books.length && books.map((book) => (
           <article key={book.id} className="book-card">
             <div>
               <h3>{book.title}</h3>
@@ -42,7 +42,7 @@ function CatalogSection({
               )}
             </div>
           </article>
-        ))}
+        )) || <p>No books found.</p>}
       </div>
     </div>
   );
