@@ -1,0 +1,290 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  padding: 0.65rem 0.95rem;
+  background: #ffffff;
+  color: #1f2933;
+}
+
+button:hover {
+  background: #f0f4f8;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+  padding: 0.7rem 0.8rem;
+  background: #ffffff;
+}
+
+.shell {
+  width: min(1180px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem;
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-card,
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: none;
+}
+
+.hero-card {
+  padding: 1.5rem;
+}
+
+.hero-card h1,
+.topbar h1 {
+  margin: 0.25rem 0 0.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #52606d;
+  font-size: 0.75rem;
+}
+
+.lede {
+  max-width: 30rem;
+  font-size: 1rem;
+}
+
+.toggle-row,
+.search-row,
+.form-actions,
+.section-header,
+.topbar,
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-row button.active,
+.primary-button {
+  background: #2f6fed;
+  border-color: #2f6fed;
+  color: #ffffff;
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-grid label {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.app-shell {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.workspace-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.metric-card strong {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.book-list,
+.simple-list {
+  display: grid;
+  gap: 0.9rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.book-card,
+.simple-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #fdfefe;
+  border: 1px solid #e5e7eb;
+}
+
+.book-card h3,
+.panel h2 {
+  margin: 0 0 0.4rem;
+}
+
+.book-card p,
+.simple-list span {
+  margin: 0.2rem 0;
+}
+
+.overdue-members-list li {
+  display: block;
+}
+
+.overdue-members-list strong,
+.overdue-members-list span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.borrowings-list li {
+  align-items: flex-start;
+}
+
+.borrowing-summary .overdue-badge {
+  background: #f87171;
+  color: #ffffff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.borrowing-summary {
+  min-width: 0;
+}
+
+.borrowing-summary strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.borrowing-meta {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.borrowing-meta span {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f8fafc;
+  overflow-wrap: anywhere;
+}
+
+.borrowing-meta small {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: #52606d;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.alert {
+  margin: 10px 0;
+  padding: 0.8rem 0.9rem;
+  border-radius: 6px;
+}
+
+.alert.error {
+  background: #fde8e8;
+  color: #9b1c1c;
+  border: 1px solid #f5c2c7;
+}
+
+.alert.success {
+  background: #e6f4ea;
+  color: #216e39;
+  border: 1px solid #b7dfc6;
+}
+
+.danger {
+  background: #fff5f5;
+  border-color: #f3c4c4;
+  color: #b42318;
+}
+
+@media (max-width: 900px) {
+  .auth-shell,
+  .dashboard-grid,
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .span-2 {
+    grid-column: auto;
+  }
+
+  .section-header,
+  .topbar,
+  .book-card,
+  .simple-list li,
+  .search-row,
+  .card-actions,
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .borrowing-meta {
+    grid-template-columns: 1fr;
+  }
+}
