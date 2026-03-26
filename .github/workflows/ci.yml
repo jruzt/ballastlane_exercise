@@ -37,7 +37,7 @@ jobs:
         env:
           RAILS_ENV: test
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/ballast_lane_exercise_test
-        run: bin/rails db:prepare
+        run: bin/rails db:drop db:create db:schema:load
 
       - name: Run RSpec
         env:

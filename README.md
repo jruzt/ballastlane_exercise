@@ -10,7 +10,7 @@ As a member, I need to search books and borrow available copies so I can manage 
 
 ## Stack
 
-- Ruby 3.2.2
+- Ruby 3.3.7
 - Rails 7.2
 - PostgreSQL
 - RSpec
