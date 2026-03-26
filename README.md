@@ -61,9 +61,9 @@ The Rails API runs at `http://localhost:3000`.
 
 #### Frontend
 
-The React app lives in [frontend](/Users/jruz/workspace/rails_projects/library_management/frontend).
+The React app lives in [frontend](/frontend).
 
-Use Node `20.18.1` or newer. The checked-in version is in [frontend/.nvmrc](/Users/jruz/workspace/rails_projects/library_management/frontend/.nvmrc).
+Use Node `20.18.1` or newer. The checked-in version is in [frontend/.nvmrc](/frontend/.nvmrc).
 
 1. Install frontend dependencies:
 
@@ -157,4 +157,4 @@ npm run build
 - Borrowing uses a database-backed uniqueness rule so a member cannot hold the same book twice at once.
 - Borrowing also uses a row lock on the book record to avoid oversubscribing the last available copy.
 
-Additional interview notes are available in [docs/architecture.md](/Users/jruz/workspace/rails_projects/library_management/docs/architecture.md) and [docs/genai-notes.md](/Users/jruz/workspace/rails_projects/library_management/docs/genai-notes.md).
+Additional notes are available in [docs/architecture.md](/docs/architecture.md) and [docs/genai-notes.md](/docs/genai-notes.md).
