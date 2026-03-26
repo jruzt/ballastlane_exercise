@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Borrowing, type: :model do
   it "is active when not returned" do

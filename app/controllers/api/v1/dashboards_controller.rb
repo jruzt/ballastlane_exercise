@@ -42,9 +42,9 @@ module Api
       end
 
       def dashboard_includes(dashboard)
-        return [:overdue_members] if dashboard.role == User.roles[:librarian]
+        return [ :overdue_members ] if dashboard.role == User.roles[:librarian]
 
-        ["borrowings.book"]
+        [ "borrowings.book" ]
       end
     end
   end

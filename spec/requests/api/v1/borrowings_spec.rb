@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "Borrowings API", type: :request do
   describe "POST /api/v1/borrowings" do

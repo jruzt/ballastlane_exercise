@@ -11,7 +11,7 @@ module JsonRespondable
     }
     error[:source] = { pointer: pointer } if pointer.present?
 
-    { errors: [error] }
+    { errors: [ error ] }
   end
 
   def json_validation_error_response(record)

@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Book, type: :model do
   it "is valid with the factory" do

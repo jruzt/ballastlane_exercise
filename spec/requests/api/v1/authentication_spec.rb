@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "Authentication API", type: :request do
   describe "POST /api/v1/auth/sign_up" do

@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "Books API", type: :request do
   describe "GET /api/v1/books" do
@@ -11,7 +11,7 @@ RSpec.describe "Books API", type: :request do
       get "/api/v1/books", params: { q: "Dune" }, as: :json
 
       expect(response).to have_http_status(:ok)
-      expect(json_response.fetch("data").map { |book| book["id"].to_i }).to eq([match.id])
+      expect(json_response.fetch("data").map { |book| book["id"].to_i }).to eq([ match.id ])
       expect(json_response.dig("meta", "total")).to eq(1)
       expect(json_response.dig("meta", "query")).to eq("Dune")
     end

@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe BorrowingPolicy do
   subject(:policy) { described_class.new(user, borrowing) }
